@@ -1,0 +1,40 @@
+/* Header.module.css */
+
+  .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .menu ul li {
+    font-size: 18px;
+  }
+  
+  .signinLink,
+  .signupLink {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+  }
+  
+  .signinLink:hover,
+  .signupLink:hover {
+    background-color: #333;
+    color: #fff;
+  }
