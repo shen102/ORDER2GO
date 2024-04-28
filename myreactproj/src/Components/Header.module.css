@@ -2,7 +2,9 @@
 
   .right {
     display: flex;
+    padding-top: 10px;
     align-items: center;
+    justify-content: center;
   }
   
   .menu {
@@ -16,12 +18,11 @@
     gap: 10px;
     margin: 0;
     padding: 0;
-    justify-content: center;
-    align-items: center;
   }
   
   .menu ul li {
     font-size: 18px;
+ 
   }
   
   .signinLink,
@@ -31,6 +32,7 @@
     padding: 5px 10px;
     border: 1px solid #333;
     border-radius: 5px;
+    
   }
   
   .signinLink:hover,
