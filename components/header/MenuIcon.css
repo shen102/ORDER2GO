@@ -1,0 +1,58 @@
+
+.container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menuButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .menu{
+        width: 150px;
+        display: none;
+        }
+    
+        .menu li {
+          padding: 10px;
+          text-align: center;
+        }
+    
+        .menu li a {
+          color: #f8efef;
+          text-decoration: none;
+        }
+  
+  /* Media query for screens with a maximum width of 600 pixels */
+  @media (max-width: 1200px) {
+    .menuButton {
+      padding: 3px;
+    }
+  
+    .menu {
+      width: 50%;
+      top: 20px;
+      padding: 5px;
+      justify-content: space-evenly;    }
+  
+    .menu li {
+      padding: 5px;
+    }
+         
+  }
+
+
+
+
+
+
+
+
+
+
+

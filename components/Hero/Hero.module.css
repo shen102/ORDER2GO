@@ -1,0 +1,299 @@
+.container {
+  padding: 0rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 5rem;
+}
+
+.wrapper {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  position: relative;
+}
+
+.middleContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper > img {
+  width: 30rem;
+  position: absolute;
+  bottom: 0;
+}
+
+
+.blueCircle {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 50%;
+  z-index: -99;
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(135.74deg, #ff0b34 14.09%, #fd0579 83.81%);
+}
+
+.h_sides {
+  display: grind;
+  grid-template-rows: 1fr 1fr;
+}
+
+.text1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  width: min-content;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.text1 {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+}
+
+.text2 > :first-child {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 5rem;
+  color: rgb(0, 0, 0);
+}
+
+.text2 > :nth-child(2) {
+  display: block;
+  margin-top: 5rem;
+  font-weight: 500;
+}
+
+.traffic {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.traffic > :first-child {
+  font-weight: 550;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: rgb(0, 0, 0);
+}
+
+.customers {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  margin-top: 5rem;
+}
+
+.customers > :first-child {
+  font-weight: 800;
+  text-align: right;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+
+/*expp at home*/
+.cart2try {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.cart2try > svg {
+  width: 20px;
+  height: 20px;
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  border: 6px solid var(--black);
+  font-size: 1rem;
+}
+
+.signuptry {
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signuptry > :first-child {
+  display: block;
+  width: 6rem;
+}
+
+.signuptryup > :nth-child(2) {
+  border-radius: 60%;
+  border: 1px solid #f3f03a;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo span {
+  font-style: italic;
+}
+
+
+@media screen and (max-width: 856px) {
+.text1, .text2>span:nth-last-of-type(){
+font-size: .7rem;
+text-align:  justify;
+
+}
+
+.container{
+  margin-top: 100px;
+}
+.text2 > span:nth-of-type(1){
+.traffic > span:nth-child(1)
+.customers > span:nth-child(1){
+  font-size: 1rem;
+  text-align: left;
+}
+}
+
+.BlueCircle {
+  
+    width: 25rem;
+    height: 30rem;
+    position: absolute;
+  }
+
+.wrapper>img{
+  width: 180%;
+  height: 100%;
+  position: absolute;
+}
+
+.container{
+  grid-template-areas: 
+  'left center center'
+  'right right right'
+}
+
+.container>:first-child{
+  grid-area: left;
+  grid-template-rows: none;
+  gap: 8rem;
+}
+
+.customers{
+  margin-left: 90px;
+  margin-top: 90px;
+}
+
+
+}
+
+@media (max-width: 640px) { 
+  .container {    
+      padding: 0.5rem;
+  }
+}
+
+@media (max-width: 391px) {
+  .blueCircle {
+    width: 20rem;
+    height: 10rem;
+    border-radius: 50%;
+    z-index: -99;
+    position: absolute;
+    bottom: 0;
+    right: 100; /* Adjust this value to move the circle to the left */
+    display: none;
+    background: linear-gradient(135.74deg, #f8d04d 14.09%, #e9df8b 83.81%);
+  }
+
+/* YourComponent.module.css or your regular CSS file */
+.container {
+  /* Your container styles */ display: none;
+}
+
+.h_sides {
+  font-size: 15px; 
+  margin-left: -30px;
+  margin-right: 10px;
+  display: none;
+}
+
+.text1 {
+  font-size: 15px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  display: none;
+}
+
+.text2 span {
+  font-size: 10px; /* Set the desired font size for spans inside text2 */
+  margin-right: 5px;
+  display: none;
+}
+
+.text2 .text1 {
+  font-size: 15px; 
+  display: none;/* Set the desired font size for text1 inside text2 */
+}
+
+/* Additional styles for other elements if needed */
+
+
+.h_sides {
+  /* Your h_sides styles */display: none;
+}
+
+.traffic span:nth-child(1) {
+  font-size: 20px;
+  margin-top: 10px;
+  display: none; /* Set the desired font size for the first span */
+}
+
+.traffic span:nth-child(2) {
+  font-size: 16px;
+  display: none; /* Set the desired font size for the second span */
+}
+
+.traffic span:nth-child(3) {
+  font-size: 14px;
+  display: none; /* Set the desired font size for the third span */
+}
+
+.traffic span:nth-child(4) {
+  font-size: 12px; /* Set the desired font size for the fourth span */
+  margin-left: 100px;
+  display: none;
+}
+
+.wrapper > img {
+  width: 30rem;
+  position: auto;
+  bottom: 0;
+}
+
+}
+
+@media (max-width: 983px) {
+.container{
+  display: none;
+}
+
+}
+
+@media (max-width: 390px) {
+  .container{
+    display: none;
+  }
+  
+  }
+
