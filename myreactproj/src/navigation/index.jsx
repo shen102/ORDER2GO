@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "../Components/Header";
-import Cart from '../pages/Cart';
+import Header  from "../Components/Header";
 import Home from '../pages/Home';
 import Login from "../pages/Login";
 import Register from '../pages/Register';
@@ -22,7 +21,6 @@ const Navigation = () => {
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
                 <Route path="/menu" element={<Menu />} />
-                <Route path="/cart" element={<Cart />} />
                 <Route path="/payment-success" element={<PaymentSuccess />} />
             </Routes>
            

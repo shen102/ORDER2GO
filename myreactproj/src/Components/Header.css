@@ -1,0 +1,68 @@
+/* Center the body content */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 170px;
+    
+    
+  }
+  
+  .header {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    
+  }
+  
+  .logo-container {
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto; /* Center the logo horizontally */
+}
+
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+
+
+  .button-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 14px 70px;
+    background-color: white;
+    border-radius: 8px;
+    
+  }
+  
+  .sign-in-button,
+  .sign-up-button {
+    background-color:rgb(253, 247 , 247);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding-top: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .sign-in-button:hover,
+  .sign-up-button:hover {
+    background-color: #ffc107;
+  }
