@@ -1,25 +1,43 @@
-import React from "react";
-import "./Header.css";
 import logo from "../assets/images/logo.png";
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img src={logo} alt="Coffee Milk Tea Logo" className="logo" />
-      </div>
-      <h1 className="title">ORDER 2 GO</h1>
-      <p className="subtitle">Coffee & Milk Tea</p>
+import cartIcon from "../assets/icons/cart.svg";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-      <div className="container">
-        <div className="button-container">
-          <button className="sign-in-button">Sign In</button>
+export const Header = ({ cartCount }) => {
+  const navigate = useNavigate();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogout = () => {
+    sessionStorage.removeItem("Auth token");
+    sessionStorage.removeItem("User Id");
+    window.dispatchEvent(new Event("storage"));
+    navigate("/");
+  };
+
+  useEffect(() => {
+    const checkAuthToken = () => {
+      const token = sessionStorage.getItem("Auth token");
+      if (token) {
+        setIsLoggedIn(true);
+      } else {
+        setIsLoggedIn(false);
+      }
+    };
+
+    window.addEventListener("storage", checkAuthToken);
+
+    return () => {
+      window.removeEventListener("storage", checkAuthToken);
+    };
+  }, []);
+
+  return (
+  
+        <div className="nav-menu-wrapper flex items-center justify-between space-x-10">
+          <Link to="/" className="text-xl">
+          </Link>
         </div>
-        <div className="button-container">
-          <button className="sign-up-button">Sign Up</button>
-        </div>
-      </div>
-    </div>
+      
   );
 };
-
-export default Header;

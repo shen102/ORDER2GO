@@ -1,10 +1,12 @@
+import {Signin} from "../../Components/SignIn"
 
-const login = () => {
+const SignIn = () => {
     return (
-        <div className="text-white">
-            Login
-        </div>
+        <>
+        <Signin/>
+        
+    </>
     )
 }
 
-export default login;
+export default SignIn;

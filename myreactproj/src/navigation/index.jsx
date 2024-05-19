@@ -1,12 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Header  from "../Components/Header";
-import Home from '../pages/Home';
-import Login from "../pages/Login";
-import Register from '../pages/Register';
-import Menu from '../pages/Menu';
+import { Header } from "../Components/Header";
+import Home from "../pages/Home";
+import SignIn from "../pages/Login";
+import SignUp from "../pages/signup";
 
 
-import PaymentSuccess from "../pages/PaymentSuccess";
+
+
 
 
 
@@ -17,11 +17,9 @@ const Navigation = () => {
         <BrowserRouter>
             <Header/>
             <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
-                <Route path="/menu" element={<Menu />} />
-                <Route path="/payment-success" element={<PaymentSuccess />} />
+                <Route path="/" element={<Home/>} />
+                <Route path="/signin" element={<SignIn/>} />
+                <Route path="/signup" element={<SignUp />} />
             </Routes>
            
         </BrowserRouter>
