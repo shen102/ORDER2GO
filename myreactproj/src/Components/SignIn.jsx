@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import './SignIn.css';
 
 export const Signin = () => {
@@ -39,8 +41,9 @@ export const Signin = () => {
           onChange={(e) => setPassword(e.target.value)}
           required
         /><br /><br />
-
-        <button type="button" onClick={handleSignIn}>Sign In</button>
+       <Link to="/home" style={{ textDecoration: "none" }}>
+          <button type="button" onClick={handleSignIn}>Sign In</button>
+        </Link>
       </form>
     </div>
   );
