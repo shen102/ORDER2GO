@@ -1,0 +1,97 @@
+.home {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f8e5a2;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .home-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2c94c;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .user-icon, .cart-icon {
+    font-size: 24px;
+  }
+  
+  .order-text {
+    font-weight: bold;
+  }
+  
+  .search-bar input {
+    width: 80%;
+    padding: 5px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .categories {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  
+  .category-btn {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    flex-grow: 1;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .top-products {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  .product {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+  
+  .affiliate-shops {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+  }
+  
+  .shop-logo {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2c94c;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .footer-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
