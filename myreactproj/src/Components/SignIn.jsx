@@ -44,8 +44,20 @@ export const Signin = () => {
        <Link to="/home" style={{ textDecoration: "none" }}>
           <button type="button" onClick={handleSignIn}>Sign In</button>
         </Link>
+        
       </form>
+      
+
+
+      <div className='signup'>
+          <div  className='sp'>
+              <div className='no-account'>Dont have an account yet?</div>
+              <div className='signups'>Sign up</div>
+          </div>
+          
+        </div>
     </div>
+    
   );
 }
 
