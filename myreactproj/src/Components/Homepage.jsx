@@ -23,7 +23,7 @@ export const Homepage = () => {
         </div>
         <div className="product">
           <span className="product-name">Don Machiato</span>
-          <span className="product-price">₱39</span>
+          <span className="product-price">₱39 Don Barako</span>
         </div>
       </div>
       <div className="affiliate-shops">
