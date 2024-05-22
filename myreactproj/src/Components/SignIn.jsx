@@ -1,17 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import './SignIn.css';
+import "./SignIn.css";
 
 export const Signin = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    console.log('Email:', email);
-    console.log('Password:', password);
+    console.log("Email:", email);
+    console.log("Password:", password);
   };
 
   return (
@@ -40,14 +40,23 @@ export const Signin = () => {
             className="input"
           />
         </div>
-        <button type="submit" className="button">Submit</button>
-        <p>
-          Not have an account? <a href="/signup" className="link">Sign Up Here</a>
-        </p>
+        <Link to="/home" style={{ textDecoration: "none" }}>
+          <button type="submit" className="button">
+            Submit
+          </button>
+        </Link>
+
+        <Link to="/signup" style={{ textDecoration: "none" }}>
+          <p>
+            Not have an account?{" "}
+            <a href="/signup" className="link">
+              Sign Up Here
+            </a>
+          </p>
+        </Link>
       </form>
     </div>
   );
 };
-
 
 export default Signin;

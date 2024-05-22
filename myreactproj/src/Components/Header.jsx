@@ -1,5 +1,4 @@
 import logo from "../assets/images/logo.png";
-import cartIcon from "../assets/icons/cart.svg";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
