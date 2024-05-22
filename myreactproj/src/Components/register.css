@@ -32,7 +32,8 @@ input {
   padding: 10px;
   margin-bottom: 15px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #bdc3c7;
+  background-color: rgb(232,  240, 254);
 }
 
 button {
