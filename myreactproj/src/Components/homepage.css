@@ -2,7 +2,8 @@
   width: 400px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #0c0101;
+  box-shadow: #0c0101;
   border-radius: 10px;
   background-color: #FFEAAC;
   font-family: Arial, sans-serif;
@@ -64,6 +65,10 @@
 
 .top-products {
   margin: 20px 0;
+  
+}
+.products{
+display: flex;
 }
 
 .top-products h2 {
@@ -79,41 +84,43 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin: 5px 0;
+  margin: 5px 10;
   cursor: pointer;
+  color: black;
 }
 
 .product-button img {
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .affiliate-shops{
-  justify-content: space-around;
-  margin: 20px;
-}
 
+  margin: 20px;
+   justify-content: space-between;
+}
+.shops{
+  display: flex;
+}
 .affiliate-shops h2 {
   text-align: center;
 }
 
 .shop-button {
-  background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   margin: 5px 0;
   cursor: pointer;
 }
 
 .shop-button img {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
 }
 
 .footer {

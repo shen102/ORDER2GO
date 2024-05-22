@@ -1,18 +1,18 @@
-import React from 'react';
-import './homepage.css';
-import coffeeIcon from '../images/Coffee.png';
-import milkTeaIcon from '../images/Milktea.png';
-import coffee from '../images/Ice Coffee.png';
-import okinawa from '../images/Okinawa.png';
-import searchIcon from '../icons/search.png';
-import cartIcon from '../icons/cart.png';
-import userIcon from '../icons/profile.png';
-import homeIcon from '../icons/home.png';
-import promo from '../icons/promo.png';
-import transact from '../icons/transact.png';
-import BigBrew from '../images/BigBrew.png';
-import DonMacchiatos from '../images/Don Macchiatos.png';
-import Baabaa from '../images/Baa Baa.png';
+import React from "react";
+import "./homepage.css";
+import coffeeIcon from "../images/Coffee.png";
+import milkTeaIcon from "../images/Milktea.png";
+import coffee from "../images/Ice Coffee.png";
+import okinawa from "../images/Okinawa.png";
+import searchIcon from "../icons/search.png";
+import cartIcon from "../icons/cart.png";
+import userIcon from "../icons/profile.png";
+import homeIcon from "../icons/home.png";
+import promo from "../icons/promo.png";
+import transact from "../icons/transact.png";
+import BigBrew from "../images/BigBrew.png";
+import DonMacchiatos from "../images/Don Macchiatos.png";
+import Baabaa from "../images/Baa Baa.png";
 
 function Homepage() {
   return (
@@ -38,6 +38,7 @@ function Homepage() {
       </div>
       <div className="top-products">
         <h2>Top Products</h2>
+        <div className="products">
         <button className="product-button">
           <img src={okinawa} alt="Big Brew" />
           Big Brew
@@ -47,17 +48,22 @@ function Homepage() {
           Don Maka
         </button>
       </div>
+      </div>
+
+      
       <div className="affiliate-shops">
         <h2>Affiliate Shop</h2>
-        <button className="shop-button">
-          <img src={BigBrew} alt="Shop" />
-        </button>
-        <button className="shop-button">
-          <img src={DonMacchiatos} alt="Shop" />
-        </button>
-        <button className="shop-button">
-          <img src={Baabaa} alt="Shop" />
-        </button>
+        <div className="shops">
+          <button className="shop-button">
+            <img src={BigBrew} alt="Shop" />
+          </button>
+          <button className="shop-button">
+            <img src={DonMacchiatos} alt="Shop" />
+          </button>
+          <button className="shop-button">
+            <img src={Baabaa} alt="Shop" />
+          </button>
+        </div>
       </div>
       <div className="footer">
         <button className="footer-button">
