@@ -1,7 +1,7 @@
 import React from 'react';
 import './homepage.css';
-import coffeeIcon from '../image/Coffee.png';
-import milkTeaIcon from '../image/Milktea.png';
+import coffeeIcon from "../images/Coffee.png";
+import milkTeaIcon from '../images/Milktea.png';
 import searchIcon from '../icons/search.png';
 import cartIcon from '../icons/cart.png';
 import userIcon from '../icons/profile.png';
