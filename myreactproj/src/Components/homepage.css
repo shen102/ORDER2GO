@@ -89,8 +89,9 @@
   margin-right: 10px;
 }
 
-.affiliate-shops {
-  margin: 20px 0;
+.affiliate-shops{
+  justify-content: space-around;
+  margin: 20px;
 }
 
 .affiliate-shops h2 {
