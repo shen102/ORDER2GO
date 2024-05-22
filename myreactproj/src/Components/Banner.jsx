@@ -5,8 +5,8 @@ import "./Banner.css";
 
 export const Banner = () => {
   return (
-    <nav id="header" className="bg-black text-white">
-      <div className="header">
+    <nav id="heading" className="bg-black text-white">
+      <div className="heading">
         <div className="logo-container">
           <Link
             to="/"
