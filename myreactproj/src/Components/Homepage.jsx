@@ -1,41 +1,67 @@
 import React from 'react';
 import './homepage.css';
+import coffeeIcon from '../image/Coffee.png';
+import milkTeaIcon from '../image/Milktea.png';
+import searchIcon from '../icons/search.png';
+import cartIcon from '../icons/cart.png';
+import userIcon from '../icons/profile.png';
+import homeIcon from '../icons/home.png';
+import settingsIcon from '../icons/settings.png';
+import shopIcon from '../icons/shop.png';
 
-export const Homepage = () => {
+function Homepage() {
   return (
-    <div className="home">
-      <header className="home-1">
-        <div className="user-icon">👤</div>
-        <div className="order-text">ORDER 2 GO</div>
-        <div className="cart-icon">🛒</div>
-      </header>
+    <div className="Home">
+      <div className="header">
+        <img src={userIcon} alt="User Icon" className="icon" />
+        <h1>ORDER 2 GO</h1>
+        <img src={cartIcon} alt="Cart Icon" className="icon" />
+      </div>
       <div className="search-bar">
         <input type="text" placeholder="Search" />
+        <img src={searchIcon} alt="Search Icon" className="icon" />
       </div>
       <div className="categories">
-        <button className="category-btn">Coffee</button>
-        <button className="category-btn">Milk Tea</button>
+        <button className="category-button">
+          <img src={coffeeIcon} alt="Coffee" />
+          Coffee
+        </button>
+        <button className="category-button">
+          <img src={milkTeaIcon} alt="Milk Tea" />
+          Milk Tea
+        </button>
       </div>
       <div className="top-products">
-        <div className="product">
-          <span className="product-name">Big Brew</span>
-          <span className="product-price">₱39 Okinawa</span>
-        </div>
-        <div className="product">
-          <span className="product-name">Don Machiato</span>
-          <span className="product-price">₱39 Don Barako</span>
-        </div>
+        <h2>Top Products</h2>
+        <button className="product-button">
+          <img src={coffeeIcon} alt="Big Brew" />
+          Big Brew
+        </button>
+        <button className="product-button">
+          <img src={milkTeaIcon} alt="Don Maka" />
+          Don Maka
+        </button>
       </div>
       <div className="affiliate-shops">
-        <div className="shop-logo">BigBrew</div>
-        <div className="shop-logo">Don N</div>
-        <div className="shop-logo">Baa Baa</div>
+        <h2>Affiliate Shop</h2>
+        <button className="shop-button">
+          <img src={shopIcon} alt="Shop" />
+        </button>
+        <button className="shop-button">
+          <img src={shopIcon} alt="Shop" />
+        </button>
+        <button className="shop-button">
+          <img src={shopIcon} alt="Shop" />
+        </button>
       </div>
-      <footer className="footer">
-        <button className="footer-btn">⚙️</button>
-        <button className="footer-btn">🏠</button>
-        <button className="footer-btn">📋</button>
-      </footer>
+      <div className="footer">
+        <button className="footer-button">
+          <img src={homeIcon} alt="Home" />
+        </button>
+        <button className="footer-button">
+          <img src={settingsIcon} alt="Settings" />
+        </button>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import logo from "../assets/images/logo.png";
+import logo from "../images/logo.png";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import "./Banner.css";
