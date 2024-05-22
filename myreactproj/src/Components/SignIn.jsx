@@ -47,12 +47,14 @@ export const Signin = () => {
         </Link>
 
         <Link to="/signup" style={{ textDecoration: "none" }}>
+          <center>
           <p>
             Not have an account?{" "}
             <a href="/signup" className="link">
               Sign Up Here
             </a>
           </p>
+          </center>
         </Link>
       </form>
     </div>
