@@ -39,7 +39,7 @@ function Homepage() {
         </button>
         <button className="product-button">
           <img src={milkTeaIcon} alt="Don Maka" />
-          Don Maka
+          Don Machiato
         </button>
       </div>
       <div className="affiliate-shops">
