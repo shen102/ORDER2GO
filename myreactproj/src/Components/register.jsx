@@ -77,12 +77,13 @@ export const SignUpForm = () => {
 
         
         <Link to="/signup" style={{ textDecoration: "none" }}>
-          <p>
+         <center><p>
             Have an account?{" "}
             <a href="/signup" className="link">
               Sign in
             </a>
           </p>
+          </center> 
         </Link>
       </form>
     </div>
