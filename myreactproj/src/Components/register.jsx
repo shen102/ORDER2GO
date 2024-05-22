@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./register.css";
 
 export const SignUpForm = () => {
@@ -70,9 +71,19 @@ export const SignUpForm = () => {
         <br />
         <br />
 
-        <button type="button" onClick={handleSignUp}>
+        <button type="buttona" onClick={handleSignUp}>
           Sign Up
         </button>
+
+        
+        <Link to="/signup" style={{ textDecoration: "none" }}>
+          <p>
+            Have an account?{" "}
+            <a href="/signup" className="link">
+              Sign in
+            </a>
+          </p>
+        </Link>
       </form>
     </div>
   );

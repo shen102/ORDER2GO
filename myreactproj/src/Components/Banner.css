@@ -58,6 +58,7 @@ body {
     background-color:rgb(253, 247 , 247);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     border: none;
+    color: rgb(12, 0, 0);
     padding: 10px 40px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -70,6 +71,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     border: none;
     padding: 10px 40px;
+    color: rgb(12, 0, 0);
     margin: 0;
     border-radius: 8px;
     font-size: 14px;
