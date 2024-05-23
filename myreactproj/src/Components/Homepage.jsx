@@ -22,7 +22,7 @@ function Homepage() {
         <img src={userIcon} alt="User Icon" className="icon" />
         <h1>ORDER 2 GO</h1>
         <Link to="/cart" style={{ textDecoration: "none" }}>
-        <img src={cartIcon} alt="Cart Icon" className="icon" />
+          <img src={cartIcon} alt="Cart Icon" className="icon" />
         </Link>
       </div>
       <div className="search-bar">
@@ -73,9 +73,12 @@ function Homepage() {
         <button className="footer-button">
           <img src={promo} alt="Promo" />
         </button>
-        <button className="footer-button">
-          <img src={homeIcon} alt="Home" />
-        </button>
+
+        <Link to="/home" style={{ textDecoration: "none" }}>
+          <button className="home-button">
+            <img src={homeIcon} alt="Home" />
+          </button>
+        </Link>
         <button className="footer-button">
           <img src={transact} alt="Transact" />
         </button>

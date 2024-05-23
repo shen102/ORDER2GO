@@ -11,7 +11,7 @@ import chocolate from "../images/Chocolate.png";
 import lemon from "../images/Lemon.png";
 import greenApple from "../images/Green.png";
 import coffee from "../images/Coffee.png";
-
+import { Link } from "react-router-dom";
 
 export const MenuItems = () => {
   return (
@@ -55,15 +55,17 @@ export const MenuItems = () => {
         <button className="footer-button">
           <img src={promo} alt="Promo" />
         </button>
-        <button className="footer-button">
-          <img src={homeIcon} alt="Home" />
-        </button>
+        <Link to="/home" style={{ textDecoration: "none" }}>
+          <button className="home-button">
+            <img src={homeIcon} alt="Home" />
+          </button>
+        </Link>
         <button className="footer-button">
           <img src={transact} alt="Transact" />
         </button>
       </div>
     </div>
   );
-}
+};
 
 export default MenuItems;
