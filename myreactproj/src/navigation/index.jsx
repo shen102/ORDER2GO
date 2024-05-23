@@ -4,7 +4,8 @@ import Home from "../pages/Home";
 import SignIn from "../pages/Login";
 import SignUp from "../pages/signup";
 import HomePage from "../pages/Homepage";
-import Menu from '../pages/menu';
+import Menu1 from '../pages/BB Menu';
+import Menu2 from '../pages/DM Menu';
 
 
 
