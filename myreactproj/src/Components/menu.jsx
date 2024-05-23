@@ -12,7 +12,8 @@ import lemon from "../images/Lemon.png";
 import greenApple from "../images/Green.png";
 import coffee from "../images/Coffee.png";
 
-function menu() {
+
+export const menu=()=> {
   return (
     <div className="Home">
       <div className="header">

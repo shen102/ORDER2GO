@@ -13,6 +13,7 @@ import transact from "../icons/transact.png";
 import BigBrew from "../images/BigBrew.png";
 import DonMacchiatos from "../images/Don Macchiatos.png";
 import Baabaa from "../images/Baa Baa.png";
+import { Link } from "react-router-dom";
 
 function Homepage() {
   return (
@@ -39,24 +40,25 @@ function Homepage() {
       <div className="top-products">
         <h2>Top Products</h2>
         <div className="products">
-        <button className="product-button">
-          <img src={okinawa} alt="Big Brew" />
-          Big Brew
-        </button>
-        <button className="product-button">
-          <img src={coffee} alt="Don Maka" />
-          Don Maka
-        </button>
-      </div>
+          <button className="product-button">
+            <img src={okinawa} alt="Big Brew" />
+            Big Brew
+          </button>
+          <button className="product-button">
+            <img src={coffee} alt="Don Maka" />
+            Don Maka
+          </button>
+        </div>
       </div>
 
-      
       <div className="affiliate-shops">
         <h2>Affiliate Shop</h2>
         <div className="shops">
-          <button className="shop-button">
-            <img src={BigBrew} alt="Shop" />
-          </button>
+          <Link to="/menu" style={{ textDecoration: "none" }}>
+            <button className="shop-button">
+              <img src={BigBrew} alt="Shop" />
+            </button>
+          </Link>
           <button className="shop-button">
             <img src={DonMacchiatos} alt="Shop" />
           </button>

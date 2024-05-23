@@ -1,8 +1,10 @@
+import menu from "../../Components/menu";
 
-const Menu= () => {
-    return (
-        <div className="text-white"> Menu</div>
-    )
-}
-
+const Menu = () => {
+  return (
+    <>
+      <menu />
+    </>
+  );
+};
 export default Menu;
