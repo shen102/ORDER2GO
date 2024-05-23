@@ -5,6 +5,7 @@ const cors = require("cors");
 const db = require('./db');
 
 const app = express();
+const productRouter = require('./routes/productRouter');
 
 var corsOptions = {
     origin: "http://localhost:3000"
@@ -24,4 +25,6 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT||8080
 app.listen(PORT, ()=>{
     console.log(`server is running on port ${PORT}`)
-})
+});
+
+app.use('/api/', productRouter);

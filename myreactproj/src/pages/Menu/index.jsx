@@ -1,9 +1,9 @@
-import menu from "../../Components/menu";
+import MenuItems from "../../Components/menu"
 
 const Menu = () => {
   return (
     <>
-      <menu />
+      <MenuItems/>
     </>
   );
 };

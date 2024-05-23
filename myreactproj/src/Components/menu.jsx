@@ -13,7 +13,7 @@ import greenApple from "../images/Green.png";
 import coffee from "../images/Coffee.png";
 
 
-export const menu=()=> {
+export const MenuItems = () => {
   return (
     <div className="Home">
       <div className="header">
@@ -66,4 +66,4 @@ export const menu=()=> {
   );
 }
 
-export default menu;
+export default MenuItems;
