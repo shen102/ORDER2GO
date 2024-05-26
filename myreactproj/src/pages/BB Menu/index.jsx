@@ -1,10 +1,10 @@
-import MenuItems from "../../Components/bb menu"
+import MenuItems1 from "../../Components/bb menu"
 
-const Menu1 = () => {
+const Menu2 = () => {
   return (
     <>
-      <MenuItems/>
+      <MenuItems1/>
     </>
   );
 };
-export default Menu1;
+export default Menu2;

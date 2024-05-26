@@ -1,10 +1,10 @@
 import MenuItems from "../../Components/dm menu"
 
-const Menu2 = () => {
+const Menu1 = () => {
   return (
     <>
       <MenuItems/>
     </>
   );
 };
-export default Menu2;
+export default Menu1;

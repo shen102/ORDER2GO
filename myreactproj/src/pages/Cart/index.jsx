@@ -1,12 +1,11 @@
-
+import {AddCart} from "../../Components/cart";
 
 const Cart = () => {
-    return (
-        <>
-           
-            
-        </>
-    )
-}
+  return (
+    <>
+      <AddCart/>
+    </>
+  );
+};
 
 export default Cart;

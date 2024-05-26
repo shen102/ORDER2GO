@@ -13,7 +13,7 @@ import greenApple from "../images/Green.png";
 import coffee from "../images/Coffee.png";
 import { Link } from "react-router-dom";
 
-export const MenuItems = () => {
+export const MenuItems1 = () => {
   return (
     <div className="Home">
       <div className="header">
@@ -68,4 +68,4 @@ export const MenuItems = () => {
   );
 };
 
-export default MenuItems;
+export default MenuItems1;
