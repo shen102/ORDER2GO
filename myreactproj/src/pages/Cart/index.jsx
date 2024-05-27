@@ -1,11 +1,11 @@
-import {AddCart} from "../../Components/cart";
+import {Cart} from "../../Components/Cart";
 
-const Cart = () => {
+const AddCart = () => {
   return (
     <>
-      <AddCart/>
+      <Cart/>
     </>
   );
 };
 
-export default Cart;
+export default AddCart;

@@ -7,6 +7,7 @@ import HomePage from "../pages/Homepage";
 import Menu1 from "../pages/DM Menu";
 import Menu2 from '../pages/DM Menu';
 import Cart from "../pages/Cart";
+import AddCart from "../pages/Cart";
 
 
 
@@ -25,7 +26,8 @@ const Navigation = () => {
                 <Route path="/signin" element={<SignIn/>} />
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/menu" element = {<Menu1/>}/>
-                <Route path="/cart" element = {<Cart/>}/>
+                <Route path="/cart" element = {<AddCart/>}/>
+                
             </Routes>
            
         </BrowserRouter>

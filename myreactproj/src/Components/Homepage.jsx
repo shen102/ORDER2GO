@@ -21,10 +21,12 @@ function Homepage() {
       <div className="header">
         <img src={userIcon} alt="User Icon" className="icon" />
         <h1>ORDER 2 GO</h1>
+        
         <Link to="/cart" style={{ textDecoration: "none" }}>
           <img src={cartIcon} alt="Cart Icon" className="icon" />
         </Link>
       </div>
+
       <div className="search-bar">
         <input type="text" placeholder="Search" />
         <img src={searchIcon} alt="Search Icon" className="icon" />
