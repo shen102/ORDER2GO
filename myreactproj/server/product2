@@ -6,7 +6,7 @@ const products = [
       desc: "venti",
       price: 39,
       image:
-        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Green_nsvxkp.png",
+        "https://res.cloudinary.com/dn5ixb5lq/image/upload/v1716860409/b1_t9jxmt.png",
     },
     {
       id: 2,
@@ -15,7 +15,7 @@ const products = [
       desc: "venti",
       price: 39,
       image:
-        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Okinawa_fshhx6.png",
+        "https://res.cloudinary.com/dn5ixb5lq/image/upload/v1716860404/b2_oilyh9.png",
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ const products = [
       desc: "Venti",
       price: 39,
       image:
-        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Chocolate_andjx3.png",
+        "https://res.cloudinary.com/dn5ixb5lq/image/upload/v1716860405/b3_lnjhqh.png",
     },
 
     {
@@ -34,7 +34,7 @@ const products = [
       desc: "Venti",
       price: 39,
       image:
-        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Chocolate_andjx3.png",
+        "https://res.cloudinary.com/dn5ixb5lq/image/upload/v1716860406/b4_vgox0c.png",
     },
     {
       id: 5,
@@ -43,7 +43,7 @@ const products = [
       desc: "Venti",
       price: 39,
       image:
-        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Ice Coffee_andjx3.png",
+        "https://res.cloudinary.com/dn5ixb5lq/image/upload/v1716860405/b5_o2zt2k.png",
     },
     {
       id: 6,
@@ -52,7 +52,7 @@ const products = [
       desc: "Venti",
       price: 39,
       image:
-        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Hot Coffee_andjx3.png",
+        "https://res.cloudinary.com/dn5ixb5lq/image/upload/v1716860407/b6_r0zk7s.png",
     },
   ];
   
