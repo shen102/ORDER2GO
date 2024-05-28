@@ -1,20 +1,20 @@
 .Homepage {
-  width: 400px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 30px 0;
+  padding: 40px;
   border: 1px solid #0c0101;
   box-shadow: #0c0101;
   border-radius: 10px;
-  background-color: #FFEAAC;
+  background-color: #ffeaac;
   font-family: Arial, sans-serif;
+  justify-content: space-evenly;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #FFEAAC;
+  background-color: #ffeaac;
   padding: 10px;
+ 
 }
 
 .header .icon {
@@ -65,10 +65,9 @@
 
 .top-products {
   margin: 20px 0;
-  
 }
-.products{
-display: flex;
+.-products {
+  display: flex;
 }
 
 .top-products h2 {
@@ -96,13 +95,13 @@ display: flex;
   margin-right: 5px;
 }
 
-.affiliate-shops{
-
-  margin: 20px;
-   justify-content: space-between;
+.affiliate-shops {
+  justify-content: space-between;
+  margin: 30px 0;
 }
-.shops{
+.shops {
   display: flex;
+
 }
 .affiliate-shops h2 {
   text-align: center;
@@ -127,23 +126,20 @@ display: flex;
 .footer {
   display: flex;
   justify-content: space-around;
-  background-color: #FFEAAC;
-  padding: 10px;
+  background-color: #ffeaac;
+  margin: 30px 0;
 }
 
 .footer-button {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 10px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-}
-.home-button{
-  width: 80px;
-  height: 80px;
+
 }
 
 .footer-button img {

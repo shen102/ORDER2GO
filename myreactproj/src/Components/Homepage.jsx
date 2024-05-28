@@ -43,7 +43,7 @@ function Homepage() {
       </div>
       <div className="top-products">
         <h2>Top Products</h2>
-        <div className="products">
+        <div className="-products">
           <button className="product-button">
             <img src={okinawa} alt="Big Brew" />
             Big Brew
@@ -77,7 +77,7 @@ function Homepage() {
         </button>
 
         <Link to="/home" style={{ textDecoration: "none" }}>
-          <button className="home-button">
+          <button className="footer-button">
             <img src={homeIcon} alt="Home" />
           </button>
         </Link>

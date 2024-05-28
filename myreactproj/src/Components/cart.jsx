@@ -98,7 +98,7 @@ export const Cart = () => {
             <div className="cart-checkout">
               <div className="subtotal">
                 <span>Subtotal</span>
-                <span className="amount">${cart.cartTotalAmount}</span>
+                <span className="amount">P{cart.cartTotalAmount}</span>
               </div>
 
               <p>Taxes and shipping calculated at checkout</p>
