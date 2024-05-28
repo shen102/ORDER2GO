@@ -1,38 +1,30 @@
 import React from "react";
-import "./Receipt.css";
 import { useSelector } from "react-redux";
+import "./Receipt.css"; // Import the CSS file
 
-const Receipt = () => {
+const Receipt = ({ orderNumber }) => {
   const cart = useSelector((state) => state.cart);
-  const App = () => {
-    const orderNumber = 46; // Example order number
-  
-    return (
-      <Provider store={store}>
-        <Receipt orderNumber={orderNumber} />
-      </Provider>
-    );
-  };
-  
-  ReactDOM.redux(<App />, document.getElementById("root"));
 
   return (
     <div className="receipt-container">
       <h2>Receipt</h2>
+      <div className="receipt-header">
+        <p>Order Number: {orderNumber}</p>
+      </div>
       <div className="receipt-items">
         {cart.cartItems.map((item) => (
           <div key={item.id} className="receipt-item">
             <p>{item.name}</p>
             <p>Quantity: {item.cartQuantity}</p>
-            <p>Price: ₱{item.price}</p>
-            <p>Total: ₱{item.price * item.cartQuantity}</p>
+            <p>Price: ${item.price}</p>
+            <p>Total: ${item.price * item.cartQuantity}</p>
           </div>
         ))}
       </div>
       <div className="receipt-summary">
-        <p1>Subtotal: ₱{cart.cartTotalAmount}</p1>
-        <p1>Taxes and Shipping: To be calculated</p1>
-        <p1>Total Amount: ₱{cart.cartTotalAmount}</p1>
+        <p>Subtotal: ${cart.cartTotalAmount}</p>
+        <p>Taxes and Shipping: To be calculated</p>
+        <p>Total Amount: ${cart.cartTotalAmount}</p>
       </div>
     </div>
   );
