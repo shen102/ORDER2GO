@@ -8,6 +8,7 @@ import Menu1 from "../pages/DM Menu";
 import Menu2 from '../pages/DM Menu';
 import Cart from "../pages/Cart";
 import AddCart from "../pages/Cart";
+import Order from "../pages/order";
 
 
 
@@ -27,6 +28,8 @@ const Navigation = () => {
                 <Route path="/signup" element={<SignUp />} />
                 <Route path="/menu" element = {<Menu1/>}/>
                 <Route path="/cart" element = {<AddCart/>}/>
+                <Route path="/order" element = {<Order/>}/>
+                
                 
             </Routes>
            

@@ -2,6 +2,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 import { addToCart } from "../slices/cartSlice";
 import { useGetAllProductsQuery } from "../slices/productsApi";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const MenuItems = () => {
   const { items: products, status } = useSelector((state) => state.products);
@@ -20,7 +23,7 @@ const MenuItems = () => {
     <div className="home-container">
       {status === "success" ? (
         <>
-          <h2>New Arrivals</h2>
+          <h2> Satisfy Your Cravings</h2>
           <div className="products">
             {data &&
               data?.map((product) => (

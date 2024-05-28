@@ -100,8 +100,11 @@ export const Cart = () => {
                 <span>Subtotal</span>
                 <span className="amount">${cart.cartTotalAmount}</span>
               </div>
+
               <p>Taxes and shipping calculated at checkout</p>
-              <button>Check out</button>
+              <Link to="/order">
+                <button>Check out</button>
+              </Link>
               <div className="continue-shopping">
                 <Link to="/">
                   <svg
