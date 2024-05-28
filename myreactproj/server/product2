@@ -1,0 +1,59 @@
+const products = [
+    {
+      id: 1,
+      name: "Banoffee Frappe",
+      brand: "Baa Baa",
+      desc: "venti",
+      price: 39,
+      image:
+        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Green_nsvxkp.png",
+    },
+    {
+      id: 2,
+      name: "Cheese Cake Milktea",
+      brand: "Baa Baa",
+      desc: "venti",
+      price: 39,
+      image:
+        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Okinawa_fshhx6.png",
+    },
+    {
+      id: 3,
+      name: "Choco Thai Green Milktea",
+      brand: "Baa Baa",
+      desc: "Venti",
+      price: 39,
+      image:
+        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Chocolate_andjx3.png",
+    },
+
+    {
+      id: 4,
+      name: "Chocolate Frappe",
+      brand: "Baa Baa",
+      desc: "Venti",
+      price: 39,
+      image:
+        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Chocolate_andjx3.png",
+    },
+    {
+      id: 5,
+      name: "Cocoa Milk",
+      brand: "Baa Baa",
+      desc: "Venti",
+      price: 39,
+      image:
+        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Ice Coffee_andjx3.png",
+    },
+    {
+      id: 6,
+      name: "Stawberry Frappe",
+      brand: "Baa Baa",
+      desc: "Venti",
+      price: 39,
+      image:
+        "https://res.cloudinary.com/daql8nqvr/image/upload/v1716736788/Hot Coffee_andjx3.png",
+    },
+  ];
+  
+  module.exports = products;
