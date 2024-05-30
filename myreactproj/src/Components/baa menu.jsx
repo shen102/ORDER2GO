@@ -33,11 +33,11 @@ export const MenuItems2 = () => {
         </button>
         <button className="product-button">
           <img src={chocolate} alt="B2" />
-          Cheese Cake <br> Milktea </br>
+          Cheese Cake Milktea 
         </button>
         <button className="product-button">
           <img src={lemon} alt="B3" />
-          Choco Thai <br>Green Milktea</br>
+          Choco Thai Green Milktea
         </button>
         <button className="product-button">
           <img src={greenApple} alt="B4" />

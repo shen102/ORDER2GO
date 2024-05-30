@@ -63,12 +63,16 @@ function Homepage() {
               <img src={BigBrew} alt="Shop" />
             </button>
           </Link>
+          <Link to="/menu" style={{ textDecoration: "none" }}>
           <button className="shop-button">
             <img src={DonMacchiatos} alt="Shop" />
           </button>
+          </Link>
+          <Link to="/menu" style={{ textDecoration: "none" }}>
           <button className="shop-button">
             <img src={Baabaa} alt="Shop" />
           </button>
+          </Link>
         </div>
       </div>
       <div className="footer">

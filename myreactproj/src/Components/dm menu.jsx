@@ -1,10 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router";
 import { addToCart } from "../slices/cartSlice";
+import { useNavigate } from "react-router-dom";
 import { useGetAllProductsQuery } from "../slices/productsApi";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 const MenuItems = () => {
   const { items: products, status } = useSelector((state) => state.products);
@@ -13,6 +10,7 @@ const MenuItems = () => {
 
   const { data, error, isLoading } = useGetAllProductsQuery();
   console.log("Api", isLoading);
+  
 
   const handleAddToCart = (product) => {
     dispatch(addToCart(product));
@@ -23,16 +21,16 @@ const MenuItems = () => {
     <div className="home-container">
       {status === "success" ? (
         <>
-          <h2> Satisfy Your Cravings</h2>
+          <h2>Satisfy your Cravings</h2>
           <div className="products">
             {data &&
-              data?.map((product) => (
+              data.map((product) => (
                 <div key={product.id} className="product">
                   <h3>{product.name}</h3>
                   <img src={product.image} alt={product.name} />
                   <div className="details">
                     <span>{product.desc}</span>
-                    <span className="price">P{product.price}</span>
+                    <span className="price">${product.price}</span>
                   </div>
                   <button onClick={() => handleAddToCart(product)}>
                     Add To Cart
