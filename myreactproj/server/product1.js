@@ -1,4 +1,4 @@
-const products = [
+const products1 = [
     {
       id: 1,
       name: "Iced Caramel Macchiato",
@@ -56,4 +56,4 @@ const products = [
     },
   ];
   
-  module.exports = products;
+  module.exports = products1;
