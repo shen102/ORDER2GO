@@ -1,0 +1,129 @@
+/* Order Summary Container */
+.order-summary-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+    margin: auto;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffeaac;
+    padding: 10px;
+  }
+  
+  .header .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .basket-icon::after {
+    content: "\f291";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 24px;
+  }
+  
+  /* Status Bar */
+  .status-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .status {
+    flex: 1;
+    padding: 5px 0;
+    border-bottom: 3px solid transparent;
+    text-align: center;
+    cursor: pointer; /* Add cursor pointer to indicate clickability */
+  }
+  
+  .status.active {
+    border-bottom: 3px solid #f7b731;
+  }
+  
+  /* Order Summary */
+  .order-summary {
+    text-align: left;
+  }
+  
+  .order-summary h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Order Item */
+  .order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Add some space between items */
+  }
+  
+  .order-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .order-details {
+    text-align: left;
+  }
+  
+  .order-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Pickup Notification */
+  .pickup-notification {
+    background-color: #f7b731;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .pickup-notification h1 {
+    margin: 10px 0;
+    font-size: 24px;
+  }
+  
+  /* Footer */
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    width: 36.5%;
+    bottom: 0;
+  }
+  
+  .footer-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .footer-button img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+  }
+  
+  .footer-button:hover img {
+    opacity: 0.7;
+  }
+  

@@ -1,30 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./Receipt.css"; // Import the CSS file
 
-const Receipt = ({ orderNumber }) => {
+const Receipt = () => {
   const cart = useSelector((state) => state.cart);
+
+  useEffect(() => {
+    const orderNumber = generateOrderNumber();
+    updateLocalStorage(orderNumber, cart.cartItems);
+  }, [cart.cartItems]);
+
+  const generateOrderNumber = () => {
+    return Math.floor(100000 + Math.random() * 900000);
+  };
+
+  const updateLocalStorage = (orderNumber, items) => {
+    const orders = JSON.parse(localStorage.getItem("orders")) || {};
+    orders[orderNumber] = items;
+    localStorage.setItem("orders", JSON.stringify(orders));
+    localStorage.setItem("orderNumber", orderNumber.toString());
+  };
 
   return (
     <div className="receipt-container">
-      <h2>Receipt</h2>
+      <h2>Wait for order to be prepared</h2>
       <div className="receipt-header">
-        <p>Order Number: {orderNumber}</p>
+        <p>Order Number: {localStorage.getItem("orderNumber")}</p>
       </div>
       <div className="receipt-items">
         {cart.cartItems.map((item) => (
           <div key={item.id} className="receipt-item">
             <p>{item.name}</p>
             <p>Quantity: {item.cartQuantity}</p>
-            <p>Price: ${item.price}</p>
-            <p>Total: ${item.price * item.cartQuantity}</p>
+            <p>Price: P{item.price}</p>
+            <p>Total: P{item.price * item.cartQuantity}</p>
           </div>
         ))}
       </div>
       <div className="receipt-summary">
-        <p>Subtotal: ${cart.cartTotalAmount}</p>
-        <p>Taxes and Shipping: To be calculated</p>
-        <p>Total Amount: ${cart.cartTotalAmount}</p>
+        <p>Total Amount: P{cart.cartTotalAmount}</p>
       </div>
     </div>
   );

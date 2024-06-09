@@ -9,6 +9,8 @@ import Menu2 from '../pages/DM Menu';
 import Cart from "../pages/Cart";
 import AddCart from "../pages/Cart";
 import Order from "../pages/order";
+import Transact from "../pages/Transaction";
+import AdminDashboard from "../admin/admin_dashboard";
 
 
 
@@ -29,6 +31,11 @@ const Navigation = () => {
                 <Route path="/menu" element = {<Menu1/>}/>
                 <Route path="/cart" element = {<AddCart/>}/>
                 <Route path="/order" element = {<Order/>}/>
+                <Route path="/transaction" element = {<Transact/>}/>
+                <Route path="/admin_dashboard" element = {<AdminDashboard/>}/>
+
+
+
                 
                 
             </Routes>

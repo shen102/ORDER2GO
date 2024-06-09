@@ -21,7 +21,7 @@ function Homepage() {
       <div className="header">
         <img src={userIcon} alt="User Icon" className="icon" />
         <h1>ORDER 2 GO</h1>
-        
+
         <Link to="/cart" style={{ textDecoration: "none" }}>
           <img src={cartIcon} alt="Cart Icon" className="icon" />
         </Link>
@@ -64,30 +64,35 @@ function Homepage() {
             </button>
           </Link>
           <Link to="/menu" style={{ textDecoration: "none" }}>
-          <button className="shop-button">
-            <img src={DonMacchiatos} alt="Shop" />
-          </button>
+            <button className="shop-button">
+              <img src={DonMacchiatos} alt="Shop" />
+            </button>
           </Link>
           <Link to="/menu" style={{ textDecoration: "none" }}>
-          <button className="shop-button">
-            <img src={Baabaa} alt="Shop" />
-          </button>
+            <button className="shop-button">
+              <img src={Baabaa} alt="Shop" />
+            </button>
           </Link>
         </div>
       </div>
       <div className="footer">
-        <button className="footer-button">
-          <img src={promo} alt="Promo" />
-        </button>
+        <Link to="/home" style={{ textDecoration: "none" }}>
+          <button className="footer-button">
+            <img src={promo} alt="Promo" />
+          </button>
+        </Link>
 
         <Link to="/home" style={{ textDecoration: "none" }}>
           <button className="footer-button">
             <img src={homeIcon} alt="Home" />
           </button>
         </Link>
-        <button className="footer-button">
-          <img src={transact} alt="Transact" />
-        </button>
+
+        <Link to="/transaction" style={{ textDecoration: "none" }}>
+          <button className="footer-button">
+            <img src={transact} alt="Transact" />
+          </button>
+        </Link>
       </div>
     </div>
   );

@@ -1,77 +1,17 @@
 const mongoose = require("mongoose");
 
-const orderSchema = mongoose.Schema(
+const orderSchema = new mongoose.Schema({
+  orderNumber: { type: String, required: true }, // Unique order number
+  items: [
     {
-      user: {
-        type: mongoose.Schema.Types.ObjectId,
-        required: false,
-        ref: "User",
-      },
-      orderItems: [
-        {
-          name: { type: String, required: true },
-          amount: { type: Number, required: true },
-          imageUrl: { type: String, required: true },
-          price: { type: Number, required: true },
-          product: {
-            type: mongoose.Schema.Types.ObjectId,
-            required: true,
-            ref: "Product",
-          },
-        },
-      ],
-      shippingAddress: {
-        address: { type: String, required: true },
-        city: { type: String, required: true },
-        postalCode: { type: String, required: true },
-        country: { type: String, required: true },
-      },
-      paymentMethod: {
-        type: String,
-        required: true,
-      },
-      paymentResult: {
-        id: { type: String },
-        status: { type: String },
-        update_time: { type: String },
-        email_address: { type: String },
-      },
-      taxPrice: {
-        type: Number,
-        required: true,
-        default: 0.0,
-      },
-      shippingPrice: {
-        type: Number,
-        required: true,
-        default: 0.0,
-      },
-      totalPrice: {
-        type: Number,
-        required: true,
-        default: 0.0,
-      },
-      isPaid: {
-        type: Boolean,
-        required: true,
-        default: false,
-      },
-      paidAt: {
-        type: Date,
-      },
-      isDelivered: {
-        type: Boolean,
-        required: true,
-        default: false,
-      },
-      deliveredAt: {
-        type: Date,
-      },
+      id: { type: String, required: true }, // Unique identifier for the item
+      name: { type: String, required: true }, // Name of the item
+      quantity: { type: Number, required: true }, // Quantity of the item
+      price: { type: Number, required: true }, // Price of the item
     },
-    {
-      timestamps: true,
-    }
-  );
-  
-  module.exports = mongoose.model("Order", orderSchema);
-  
+    // Add more item objects as needed
+  ],
+  totalAmount: { type: Number, required: true }, // Total amount for the order
+});
+
+module.exports = mongoose.model("Order", orderSchema);

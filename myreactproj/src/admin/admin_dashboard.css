@@ -1,0 +1,65 @@
+/* homepage.css */
+
+.admin-dashboard {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.admin-dashboard h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.admin-dashboard .order-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.admin-dashboard .order-buttons button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.admin-dashboard .order-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.admin-dashboard .items-list {
+    margin-top: 20px;
+}
+
+.admin-dashboard .items-list h3 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.admin-dashboard .items-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.admin-dashboard .items-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.admin-dashboard .items-list li p {
+    margin: 5px 0;
+}
+
+.admin-dashboard .items-list li p:first-child {
+    font-weight: bold;
+}
